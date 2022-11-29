@@ -15,13 +15,18 @@ require("dotenv").config();
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // config goes here
+  apiKey: "AIzaSyB2CpLexBf7JVqwiMyFsOKyPB0x0PD7dsI",
+  authDomain: "pustack-demo.firebaseapp.com",
+  projectId: "pustack-demo",
+  storageBucket: "pustack-demo.appspot.com",
+  messagingSenderId: "671763442820",
+  appId: "1:671763442820:web:fb83a119a877a81797a6d1"
 };
 
 if (!admin.apps.length) {
   initializeAdminApp({
     credential: applicationDefault(),
-    databaseURL: "https://remix-firebase-3622f.firebaseio.com",
+    databaseURL: "https://pustack-demo-default-rtdb.firebaseio.com",
   });
 }
 
